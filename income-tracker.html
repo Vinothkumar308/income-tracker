@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="income-tracker.css">
+    <script src="income-tracker.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="main-page">
+            <h2>income expense tracker</h2>
+            <h4>your balance</h4>
+            <div id="balance">&#8377 <span id="rupee1">0.00</span></div>
+            <div class="income-expense">
+                <div id="income">
+                    <h3>income</h3>
+                    <div id="save-money">&#8377 <span id="rupee2"> 0.00</span></div>
+                </div>
+                <div id="expense">
+                    <h3>expense</h3>
+                    <div id="buy">&#8377 <span id="buy1">0.00</span></div>
+                </div>
+            </div>
+            <form action="#" id="frm">
+                <label for="describtion">description</label>
+                <input type="text" placeholder="Enter description" id="describtion">
+                <label for="amount" >amount</label>
+                <input type="number" id="amount" Placeholder="Amount">
+                <button  id="btn">add transaction</button>
+            </form>
+
+        </div>
+        <div id="salary-page">
+             <h3>transaction details</h3>
+             <ul id="ule">
+             <li class="box">
+                <div>salary</div>
+                <div>+25000</div>
+                <button id="x">x</button>
+             </li>
+         </ul>
+        </div>
+    </div>
+</body>
+</html> 
