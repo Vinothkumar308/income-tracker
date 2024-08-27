@@ -1,0 +1,170 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css); 
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    place-items: center;
+}
+#container{
+    width:700px;
+    height:530px;
+    display:flex;
+    margin:0 auto;
+    border:1px solid black;
+    box-shadow:5px 5px 20px 10px #aaa5a5;
+    border-radius:2px;
+}
+#main-page{
+    width:50%;
+    border:2px solid black;
+    padding:25px 16px 26px;
+    background-color:rgb(32, 32, 58);
+}
+h2{
+    font-size:23px;
+    color:yellow;
+    font-weight:700;
+    text-transform:uppercase;
+}
+h4{
+    font-size:17px;
+    color:white;
+    margin-top:10px;
+    text-transform:capitalize;
+}
+#balance{
+   font-size:27px;
+   color:white;
+   margin-top:15px;
+   font-weight:700;
+}
+.income-expense{
+    display:flex;
+    justify-content: space-between;
+}
+#income,#expense{
+    width:45%;
+    height:100px;
+    border:4px solid rgb(38, 212, 38);
+    border-radius:6px;
+    padding:10px;
+    text-align:center;
+    color:green;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-top:15px;
+}
+#expense{
+    border:4px solid rgb(212, 38, 47);
+    border-radius:6px;
+    color:rgb(212, 38, 47);
+}
+#income h3,#expense h3{
+    margin-top:9px;
+}
+#income #save-money,#expense #buy{
+    margin-top:13px;
+    font-size:20px;
+}
+form{
+    width:100%;
+    margin-top:32px;
+}
+label,select,button,input{
+    display:block;
+    
+}
+label{
+    font-size:20px;
+    text-transform:capitalize;
+    color:white;
+    letter-spacing:0.7px;
+    margin-top:10px;
+    font-weight:600;
+}
+input,select{
+    width:100%;
+    padding:8px 10px;
+    font-size:16px;
+    font-weight:600;
+    text-transform: capitalize;
+    color:grey;
+    outline:none;
+    margin-top:7px;
+    border-radius:5px;
+}
+select{
+    appearance: none;
+}
+#btn{
+    width:100%;
+    margin-top:15px;
+    padding:6px 0;
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight:bold;
+    background-color:lightseagreen;
+    color:white;
+}
+#salary-page{
+    width:50%;
+    padding:20px 16px 26px;
+    overflow-y:scroll;
+    
+}
+#salary-page::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color:black;
+}
+#salary-page h3{
+    font-size:15px;
+    font-weight:bold;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    border-bottom:2px solid grey;
+    padding-bottom:8px;
+}
+
+.box{
+    display:flex;
+    font-size:16px;
+    font-weight:bold;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:15px;
+    border:2px solid grey;
+    padding:10px;
+    list-style-type: none;
+    position:relative;
+}
+.active{
+    border-left:5px solid green;
+}
+.non-active{
+    border-left:5px solid red;
+}
+#x{
+    position:absolute;
+    right:-6px;
+    top:-6px;
+    color:white;
+    background-color:red;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    line-height:5px;
+}
